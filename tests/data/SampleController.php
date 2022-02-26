@@ -60,7 +60,7 @@ class SampleController extends Controller
      */
     public function mainAction(Request $request, string $parametre, CreerUneOperationDiverseClientService $creerUneOperationDiverseClientService): Response
     {
-        $doublonDevisFamillesOuvragesRepository = $this->get('app.devis.famille_ouvrage.repository');
+        $doublonDevisFamillesOuvragesRepository = $this->get('app.troisieme_dependance');
 
         $code = 1 + 3;
 
@@ -74,7 +74,7 @@ class SampleController extends Controller
 
     public function otherAction(Request $request, string $parametre): Response
     {
-        $doublonDevisFamillesOuvragesRepository = $this->get('app.devis.famille_ouvrage.repository');
+        $doublonDevisFamillesOuvragesRepository = $this->get('app.troisieme_dependance');
 
         $code = 1 + 3;
 
@@ -88,7 +88,7 @@ class SampleController extends Controller
 
     public function oldAction(Request $request, $parametre)
     {
-        $doublonDevisFamillesOuvragesRepository = $this->get('app.devis.famille_ouvrage.repository');
+        $doublonDevisFamillesOuvragesRepository = $this->get('app.troisieme_dependance');
 
         $code = 1 + 3;
 

@@ -19,7 +19,7 @@ class RecupererLesAliasPresentsDansLeControllerTest extends TestCase
             29 => 'appbundle.dependance_secondaire.service',
             40 => 'app.dependance_interne',
             41 => 'app.autre_dependance_interne',
-            62 => 'app.devis.famille_ouvrage.repository',
+            62 => 'app.troisieme_dependance',
         ];
 
         $this->assertEquals($arrayAttendu, $aliasPresentsDansLeController);

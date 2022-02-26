@@ -1,0 +1,15 @@
+services:
+  appbundle.dependance_principale.service:
+    class: DependancePrincipaleService
+
+  appbundle.dependance_secondaire.service:
+    class: DependanceSecondaireService
+
+  app.dependance_interne:
+    class: DependanceInterne
+
+  app.autre_dependance_interne:
+    class: AutreDependanceInterne
+
+  app.troisieme_dependance:
+    class: TroisiemeDependance
