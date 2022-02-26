@@ -26,8 +26,8 @@ class SampleController extends Controller
     public function setContainer(ContainerInterface $container = null)
     {
         parent::setContainer($container);
-        $this->dependancePrincipaleService = $this->get('appbundle.dependance_principale_service.service');
-        $this->dependanceSecondaireService = $this->get('appbundle.dependance_secondaire_service.service');
+        $this->dependancePrincipaleService = $this->get('appbundle.dependance_principale.service');
+        $this->dependanceSecondaireService = $this->get('appbundle.dependance_secondaire.service');
     }
 
     /**
