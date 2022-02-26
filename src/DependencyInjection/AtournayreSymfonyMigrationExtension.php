@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Atournayre MakerBundle package.
+ * This file is part of the Atournayre SymfonyMigrationBundle package.
  *
  * (c) Aurélien Tournayre <aurelien.tournayre@gmail.com>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Atournayre\Bundle\MakerBundle\DependencyInjection;
+namespace Atournayre\Bundle\SymfonyMigrationBundle\DependencyInjection;
 
 use Symfony\Bundle\MakerBundle\DependencyInjection\CompilerPass\MakeCommandRegistrationPass;
 use Symfony\Bundle\MakerBundle\MakerInterface;
@@ -23,7 +23,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
  *
  * @see http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class AtournayreMakerExtension extends Extension
+class AtournayreSymfonyMigrationExtension extends Extension
 {
     /**
      * {@inheritdoc}

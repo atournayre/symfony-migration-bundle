@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Atournayre MakerBundle package.
+ * This file is part of the Atournayre SymfonyMigrationBundle package.
  *
  * (c) Aurélien Tournayre <aurelien.tournayre@gmail.com>
  *
@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace Atournayre\Bundle\MakerBundle;
+namespace Atournayre\Bundle\SymfonyMigrationBundle;
 
-use Atournayre\Bundle\MakerBundle\DependencyInjection\AtournayreMakerExtension;
+use Atournayre\Bundle\SymfonyMigrationBundle\DependencyInjection\AtournayreSymfonyMigrationExtension;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
  * @author Aurélien Tournayre <aurelien.tournayre@gmail.com>
  */
-class AtournayreMakerBundle extends Bundle
+class AtournayreSymfonyMigrationBundle extends Bundle
 {
     public function getContainerExtension(): ?ExtensionInterface
     {
         if (null === $this->extension) {
-            $this->extension = new AtournayreMakerExtension();
+            $this->extension = new AtournayreSymfonyMigrationExtension();
         }
 
         return $this->extension;

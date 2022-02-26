@@ -1,4 +1,4 @@
-The Atournayre MakerBundle
+The Atournayre SymfonyMigrationBundle
 =======================
 
-Atournayre Maker
+Atournayre SymfonyMigration

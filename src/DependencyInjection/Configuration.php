@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Atournayre MakerBundle package.
+ * This file is part of the Atournayre SymfonyMigrationBundle package.
  *
  * (c) Aurélien Tournayre <aurelien.tournayre@gmail.com>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Atournayre\Bundle\MakerBundle\DependencyInjection;
+namespace Atournayre\Bundle\SymfonyMigrationBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -21,12 +21,12 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder('atournayre_maker');
+        $treeBuilder = new TreeBuilder('atournayre_symfony_migration');
         if (method_exists($treeBuilder, 'getRootNode')) {
             $rootNode = $treeBuilder->getRootNode();
         } else {
             // BC layer for symfony/config 4.1 and older
-            $rootNode = $treeBuilder->root('atournayre_maker');
+            $rootNode = $treeBuilder->root('atournayre_symfony_migration');
         }
 
         $rootNode

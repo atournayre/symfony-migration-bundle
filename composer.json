@@ -1,6 +1,6 @@
 {
-    "description": "Atournayre Maker.",
-    "name": "atournayre/maker-bundle",
+    "description": "Atournayre Symfony Migration.",
+    "name": "atournayre/symfony-migration-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "keywords": ["generator", "code generator", "scaffolding", "scaffold"],
@@ -24,10 +24,10 @@
         "sort-packages": true
     },
     "autoload": {
-        "psr-4": { "Atournayre\\Bundle\\MakerBundle\\": "src/" }
+        "psr-4": { "Atournayre\\Bundle\\SymfonyMigrationBundle\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Atournayre\\Bundle\\MakerBundle\\Tests\\": "tests/" }
+        "psr-4": { "Atournayre\\Bundle\\SymfonyMigrationBundle\\Tests\\": "tests/" }
     },
     "extra": {
         "branch-alias": {
