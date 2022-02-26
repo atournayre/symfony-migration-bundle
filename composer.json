@@ -1,0 +1,37 @@
+{
+    "description": "Atournayre Maker.",
+    "name": "atournayre/maker-bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": ["generator", "code generator", "scaffolding", "scaffold"],
+    "authors": [
+        {
+            "name": "Aurélien Tournayre",
+            "email": "aurelien.tournayre@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.1.1",
+        "doctrine/common": "3.2.1",
+        "symfony/maker-bundle": "^1.36"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "6.1.x-dev"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": { "Atournayre\\Bundle\\MakerBundle\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Atournayre\\Bundle\\MakerBundle\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
